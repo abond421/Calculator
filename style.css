@@ -1,0 +1,27 @@
+#main {
+    text-align: center;
+}
+
+#screen {
+    background: #eee;
+    height: 100px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#buttons button {
+    margin: 4px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.delete {
+    background: rgb(207, 23, 23);
+    border: 1px solid rgb(161, 13, 13);
+}
+
+
