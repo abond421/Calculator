@@ -1,27 +1,68 @@
 #main {
-    text-align: center;
+  text-align: center;
+  width: 400px;
+  margin-left: 40%;
+  margin-right: 40%;
 }
 
 #screen {
-    background: #eee;
-    height: 100px;
+  background: #eee;
+  height: 100px;
+  margin: 4px;
+  border: 2px solid #000;
+  margin-bottom: 30px;
+  text-overflow: clip;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+h2 span {
+  animation: flash 1s linear infinite alternate;
+  font-weight: bold;
+}
+
+@keyframes flash {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#input {
+  text-align: start;
+  margin-left: 5px;
+}
+
+#result {
+  text-align: end;
+  margin-right: 5px;
 }
 
 #buttons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
 }
 
 #buttons button {
-    margin: 4px;
-    font-weight: bold;
-    font-size: 24px;
+  margin: 4px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+#buttons button:hover {
+  opacity: 65%;
 }
 
 .delete {
-    background: rgb(207, 23, 23);
-    border: 1px solid rgb(161, 13, 13);
+  background: rgb(207, 23, 23) !important;
+  border: 1px solid rgb(161, 13, 13);
 }
-
-
