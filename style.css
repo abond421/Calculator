@@ -3,24 +3,40 @@
   width: 400px;
   margin-left: 40%;
   margin-right: 40%;
+  background: #ffffff;
+}
+
+#calculator-body {
+  text-align: center;
+  border: 3px solid #000;
+  margin: 10px;
+  background: #02111b;
+  border-radius: 10px;
+}
+
+#input-div {
+  text-align: start;
 }
 
 #screen {
-  background: #eee;
+  background: #ffffff;
   height: 100px;
   margin: 4px;
   border: 2px solid #000;
   margin-bottom: 30px;
-  text-overflow: clip;
 }
 
 h2 {
   font-weight: normal;
+  margin-bottom: 0px;
 }
 
-h2 span {
+span {
+  text-align: start;
+  display: inline-block;
   animation: flash 1s linear infinite alternate;
   font-weight: bold;
+  vertical-align: bottom;
 }
 
 @keyframes flash {
@@ -33,29 +49,30 @@ h2 span {
 }
 
 #input {
+  display: inline-block;
   text-align: start;
-  margin-left: 5px;
+  margin-left: 16px;
+  overflow-x: auto;
 }
 
 #result {
   text-align: end;
-  margin-right: 5px;
+  margin-right: 16px;
 }
 
 #buttons {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: 5px;
 }
 
 #buttons button {
-  margin: 4px;
-  font-weight: bold;
-  font-size: 24px;
-  color: #fff;
-  background: rgb(0, 0, 0);
-  border-radius: 5px;
+  margin: 0px;
+  font-weight: normal;
+  font-size: 26px;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+  height: 3em;
 }
 
 #buttons button:hover {
@@ -63,6 +80,12 @@ h2 span {
 }
 
 .delete {
-  background: rgb(207, 23, 23) !important;
+  background: #ba1200 !important;
+  color: #ffffff !important;
   border: 1px solid rgb(161, 13, 13);
+}
+
+.operator {
+  background: #e16036 !important;
+  color: #ffffff !important;
 }

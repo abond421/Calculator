@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <script src="script.js"></script>
+  <head>
     <link rel="stylesheet" href="style.css" />
     <title>Calculator</title>
-</head>
-<header>
-    <h1>Calculator</h1> 
-</header>
-<body id="main">
-<div id=calculator-body>
-    <div id=screen>
-        <h2 id=input><span>_</span></h2>
-        <h2 id="result">0</h2>
+  </head>
+  <header>
+    <h1>Calculator</h1>
+  </header>
+  <body id="main">
+    <div id="calculator-body">
+      <div id="screen">
+        <div id="input-div">
+          <h2 id="input"></h2>
+          <span>_</span>
+        </div>
+        <h2 id="result"></h2>
+      </div>
+      <div id="buttons">
+        <button class="btn" value="7">7</button>
+        <button class="btn" value="8">8</button>
+        <button class="btn">9</button>
+        <button class="delete btn">DEL</button>
+        <button class="delete btn">AC</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn operator">*</button>
+        <button class="btn operator">/</button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn operator">+</button>
+        <button class="btn operator">-</button>
+        <button class="btn">0</button>
+        <button class="btn">.</button>
+        <br />
+        <button class="btn operator">Ans</button>
+        <button class="btn">=</button>
+      </div>
     </div>
-    <div id=buttons>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="delete">DEL</button>
-        <button class="delete">AC</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>X</button>
-        <button>/</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>+</button>
-        <button>-</button>
-        <button>0</button>
-        <button>.</button>
-        <button>EXP</button>
-        <button>Ans</button>
-        <button>=</button>
-    </div>
-</div>
-</body>
+  </body>
 </html>
+<script src="script.js"></script>
